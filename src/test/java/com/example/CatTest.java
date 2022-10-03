@@ -1,13 +1,13 @@
 package com.example;
 
-        import org.junit.Test;
-        import org.junit.runner.RunWith;
-        import org.mockito.Mock;
-        import org.mockito.junit.MockitoJUnitRunner;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 
-        import java.util.List;
+import java.util.List;
 
-        import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
@@ -16,7 +16,7 @@ public class CatTest {
     Feline feline;
 
     @Test
-    public void testCatGetSound() {
+    public void CatGetSoundTest() {
         Cat cat = new Cat(feline);
         String actual = cat.getSound();
         String expected = "Мяу";
@@ -24,7 +24,7 @@ public class CatTest {
     }
 
     @Test
-    public void testCatGetFood() throws Exception {
+    public void CatGetFoodTest() throws Exception {
         Cat cat = new Cat(feline);
         List<String> actual = cat.getFood();
         assertEquals(feline.eatMeat(), actual);
