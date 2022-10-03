@@ -12,7 +12,7 @@ public class LionManeExceptionTest {
     Feline feline;
 
     @Test(expected = Exception.class)
-    public void testDoesLionHaveManeException() throws Exception {
+    public void LionHaveManeExceptionTest() throws Exception {
         new Lion("", feline);
     }
 
