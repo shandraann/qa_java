@@ -11,7 +11,7 @@ import java.util.List;
 public class FelineTest {
 
     @Test
-    public void FelineEatMeatTest() throws Exception {
+    public void felineEatMeatTest() throws Exception {
         Feline feline = new Feline();
         List<String> actual = feline.eatMeat();
         List<String> expected = feline.getFood("Хищник");
@@ -19,7 +19,7 @@ public class FelineTest {
     }
 
     @Test
-    public void FelineGetFamilyTest() {
+    public void felineGetFamilyTest() {
         Feline feline = new Feline();
         String actual = feline.getFamily();
         String expected = "Кошачьи";
@@ -27,7 +27,7 @@ public class FelineTest {
     }
 
     @Test
-    public void FelineGetKittensTest() {
+    public void felineGetKittensTest() {
         Feline feline = new Feline();
         int actual = feline.getKittens();
         int expected = 1;
@@ -35,7 +35,7 @@ public class FelineTest {
     }
 
     @Test
-    public void GetKittensTest() {
+    public void getKittensTest() {
         Feline feline = new Feline();
         int kittensCount = 2;
         int actual = feline.getKittens(kittensCount);

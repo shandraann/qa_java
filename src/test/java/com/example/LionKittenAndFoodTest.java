@@ -18,7 +18,7 @@ public class LionKittenAndFoodTest {
     Feline feline;
 
     @Test
-    public void LionGetKittensTest() throws Exception {
+    public void lionGetKittensTest() throws Exception {
         Lion lion = new Lion("Самец", feline);
         when(feline.getKittens()).thenReturn(1);
         int actual = lion.getKittens();
@@ -27,7 +27,7 @@ public class LionKittenAndFoodTest {
     }
 
     @Test
-    public void LionGetFoodTest() throws Exception {
+    public void lionGetFoodTest() throws Exception {
         Lion lion = new Lion("Самец", feline);
         when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> actual = lion.getFood();

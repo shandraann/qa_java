@@ -16,7 +16,7 @@ public class CatTest {
     Feline feline;
 
     @Test
-    public void CatGetSoundTest() {
+    public void catGetSoundTest() {
         Cat cat = new Cat(feline);
         String actual = cat.getSound();
         String expected = "Мяу";
@@ -24,7 +24,7 @@ public class CatTest {
     }
 
     @Test
-    public void CatGetFoodTest() throws Exception {
+    public void catGetFoodTest() throws Exception {
         Cat cat = new Cat(feline);
         List<String> actual = cat.getFood();
         assertEquals(feline.eatMeat(), actual);
